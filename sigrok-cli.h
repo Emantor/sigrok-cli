@@ -19,7 +19,6 @@
 
 #ifndef SIGROK_CLI_SIGROK_CLI_H
 #define SIGROK_CLI_SIGROK_CLI_H
-
 #ifdef HAVE_SRD
 /* First, so we avoid a _POSIX_C_SOURCE warning. */
 #include <libsigrokdecode/libsigrokdecode.h>
@@ -117,6 +116,7 @@ extern gchar *opt_pd_annotations;
 extern gchar *opt_pd_meta;
 extern gchar *opt_pd_binary;
 extern gboolean opt_pd_samplenum;
+extern gboolean opt_pd_annotation_name;
 #endif
 extern gchar *opt_input_format;
 extern gchar *opt_output_format;

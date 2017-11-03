@@ -39,6 +39,7 @@ gchar *opt_pd_annotations = NULL;
 gchar *opt_pd_meta = NULL;
 gchar *opt_pd_binary = NULL;
 gboolean opt_pd_samplenum = FALSE;
+gboolean opt_pd_annotation_name = FALSE;
 #endif
 gchar *opt_input_format = NULL;
 gchar *opt_output_format = NULL;
@@ -137,6 +138,8 @@ static const GOptionEntry optargs[] = {
 			"Protocol decoder binary output to show", NULL},
 	{"protocol-decoder-samplenum", 0, 0, G_OPTION_ARG_NONE, &opt_pd_samplenum,
 			"Show sample numbers in protocol decoder output", NULL},
+	{"protocol-decoder-annotation-name", 0, 0, G_OPTION_ARG_NONE, &opt_pd_annotation_name,
+	 "Show annotation names in protocol decoder output", NULL},
 #endif
 	{"scan", 0, 0, G_OPTION_ARG_NONE, &opt_scan_devs,
 			"Scan for devices", NULL},

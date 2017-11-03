@@ -473,6 +473,9 @@ void show_pd_annotations(struct srd_proto_data *pdata, void *cb_data)
 		show_class = TRUE;
 		show_abbrev = TRUE;
 	}
+	if (opt_pd_annotation_name) {
+		show_class = TRUE;
+	}
 
 	/*
 	 * Display the annotation's fields after the layout was
