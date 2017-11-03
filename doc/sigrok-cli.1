@@ -309,9 +309,13 @@ binary class you're interested in)
 .sp
 Not every decoder generates binary output.
 .TP
-.BR "\-\-protocol\-decoder\-samplenum
+.BR "\-\-protocol\-decoder\-samplenum"
 When given, decoder annotations will include sample numbers, too.
 This allows consumers to receive machine readable timing information.
+.TP
+.BR "\-\-protocol\-decoder\-annotation\-name"
+When given, decoder annotations will include the annotation name as well.
+This allows consumers to correctly identify different annotation types.
 .TP
 .BR "\-l, \-\-loglevel " <level>
 Set the libsigrok and libsigrokdecode loglevel. At the moment \fBsigrok-cli\fP
